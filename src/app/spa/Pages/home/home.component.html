@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Users</title>
+</head>
+<body>
+    <section class="container-users-data">
+        <h1 class="text-center mb-5 text-light">{{'prueba tecnica totaltech'|titlecase}}</h1>
+        <div class="card-container row">
+            <div class="card-users card col-sm-10 col-md-5 col-lg-3" *ngFor="let user of users">
+                <span>{{user.id}}</span>
+                <h5 class="card-title text-center" [ngClass]="{'style': flagStyle}" (click)="changeStyle()">{{'user data'|uppercase}}</h5>
+                <hr>
+                <div class="card-body">
+                <p  [ngStyle]="{'color':colorStyle()}" class="name">Name: {{user.name|uppercase}}</p>
+                <p  [ngStyle]="{'font-size.px':25}">User Name: {{user.username|lowercase}}</p>
+                <p  [ngStyle]="{'font-size.px':21}">Phone: {{user.phone}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+

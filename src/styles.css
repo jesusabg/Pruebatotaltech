@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+.container-users-data{
+    padding: 30px;
+}
+.card-users{
+   margin: 15px;
+}
+.card-container{
+    justify-content: center;
+}
+
+.style{
+    background-color: rgb(34, 84, 135);
+    text-align: center;
+    color: white;
+}
+.name{
+    font-size: 22px;
+}
+body{
+    background-color: #181818ce;
+}
